@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
       });
      }
      //print(list);
-     print(list['articles'][0]['author']);
+     //print(list['articles'][0]['author']);
 
 
 ////////////////////////////////                 2                      //////////////////////////////////////
@@ -356,7 +356,7 @@ class _HomePageState extends State<HomePage> {
 			              },
 			            child: Center(
 			              child:CircularProgressIndicator(
-			                backgroundColor: Colors.white,
+			                backgroundColor: Colors.black,
 			                valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
 			          
 			              )
@@ -1115,7 +1115,7 @@ class _HomePageState extends State<HomePage> {
 				 			shrinkWrap: true,
 				 			physics: ScrollPhysics(),//tO ADD SCROLL FUNCTIONALITY
 	            scrollDirection: Axis.vertical,
-	            itemCount: list9 == null ? 0 : list9['articles'].length,
+	            itemCount:list9 == null ? 0 : list9['articles'].length,
 	            itemBuilder: (BuildContext context, int index) {
 	              return Container(
 	              	height: 420,

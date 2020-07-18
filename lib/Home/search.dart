@@ -89,10 +89,12 @@ class _SearchState extends State<Search> {
 
 	      http.Response resp = await http.get(apiURL);
 	      list = json.decode(resp.body);
-        if(list['articles'].length == 0) {
-          setState((){
-            noResult = true;
-          });
+        if(list != null){
+          if(list['articles'].length == 0) {
+            setState((){
+              noResult = true;
+            });
+          }
         }
 	  
 
